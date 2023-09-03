@@ -25,5 +25,13 @@ class MainActivity : AppCompatActivity() {
 binding.btnOpenSheet.setOnClickListener{
     dialog.show()
 }
+
+
+        Sheetbinding.button.setOnClickListener {
+            val text = Sheetbinding.editTextTextPersonName.text
+            Sheetbinding.editTextTextPersonName.setText("")
+            binding.tvMain.text = text
+            dialog.dismiss()
+        }
     }
 }
